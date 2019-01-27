@@ -19,7 +19,25 @@ Policyholders can voluntarily choose to join Apex's Fab wellness programme, whic
 ### Data
 The data consists of data from policies sold from 1st January 2007 till 31st December 2017, consisting of 1.2 million policyholder and their corresponding records as such:
 * policyholders.csv - policyholder data including gender, smoking status, underwriting status etc.
+
+   Primary key: Policyholder_ID
+
 * policies.csv - each policyholder can purchase several policies over time.
+
+   Primary key: Policy_ID
+
+   Foreign keys: Policyholder_ID, Channel_ID, Product_ID
+
 * claims.csv - claims are linked to policies.
-* channels.csv - Each policy is sold via one particular channel
+
+   Primary key: Claim_ID
+
+   Foreign key: Policy_ID
+
+* channels.csv - Each policy is sold via one particular channel.
+
+   Primary key: Channel_ID
+
 * products.csv - Each policy is linked to a particular product. 
+
+   Primary key: Product_ID
