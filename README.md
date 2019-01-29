@@ -5,7 +5,7 @@ Realistic Insurance Portfolio
 Realistic Insurance Portfolio (RIP) is a set of data files from a simulated an insurance portfolio simulator (IPS). The csv format data files include data for policyholders, policies, claims, channels and products. These data files have primary and foreign id keys to identify the relationship between the various 'entities'.
 
 IPS can be found [here](https://github.com/juschan/ips).
-Use hash ending 91bad29.
+Use hash ending 95a5e92.
 
 
 ### Simulated Scenario
@@ -19,25 +19,7 @@ Policyholders can voluntarily choose to join Apex's Fab wellness programme, whic
 ### Data
 The data consists of data from policies sold from 1st January 2007 till 31st December 2017, consisting of 1.2 million policyholder and their corresponding records as such:
 * policyholders.csv - policyholder data including gender, smoking status, underwriting status etc.
-
-   Primary key: Policyholder_ID
-
 * policies.csv - each policyholder can purchase several policies over time.
-
-   Primary key: Policy_ID
-
-   Foreign keys: Policyholder_ID, Channel_ID, Product_ID
-
 * claims.csv - claims are linked to policies.
-
-   Primary key: Claim_ID
-
-   Foreign key: Policy_ID
-
-* channels.csv - Each policy is sold via one particular channel.
-
-   Primary key: Channel_ID
-
+* channels.csv - Each policy is sold via one particular channel
 * products.csv - Each policy is linked to a particular product. 
-
-   Primary key: Product_ID
